@@ -5,5 +5,5 @@ export declare class TasksController {
     constructor(tasksService: TasksService);
     getAllTasks(): import("src/tasks/tasks.model").Task[];
     createTask(createTaskDto: CreateTaskDTO): import("src/tasks/tasks.model").Task;
-    getTaskById(id: string): {};
+    getTaskById(id: string): import("src/tasks/tasks.model").Task;
 }

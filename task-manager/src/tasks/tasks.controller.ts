@@ -26,6 +26,6 @@ export class TasksController {
     @Get("/:id")
     getTaskById(@Param("id") id: string) {
         const task = this.tasksService.getTaskById(id);
-        return !!task ? task : {};
+        return task
     }
 }

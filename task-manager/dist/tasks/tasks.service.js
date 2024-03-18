@@ -31,6 +31,9 @@ let TasksService = class TasksService {
     }
     getTaskById(id) {
         const task = this.tasksArray.find(task => task.id === id);
+        if (!task) {
+            throw new common_1.NotFoundException();
+        }
         return task;
     }
 };

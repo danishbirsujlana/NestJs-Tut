@@ -28,7 +28,7 @@ let TasksController = class TasksController {
     }
     getTaskById(id) {
         const task = this.tasksService.getTaskById(id);
-        return !!task ? task : {};
+        return task;
     }
 };
 exports.TasksController = TasksController;
